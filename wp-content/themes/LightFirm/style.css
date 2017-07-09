@@ -880,7 +880,6 @@ input[type="submit"]:focus {
     height: 120px;
     background: url(images/icons.png) no-repeat;
 }
-
 .icons .icon1 i {
     background-position: -4px -4px;
 }
@@ -899,7 +898,6 @@ input[type="submit"]:focus {
 .icons .icon6 i {
     background-position: -484px -268px;
 }
-
 .icons .icon .title {
     font-family: 'Open Sans', sans-serif;
     color: #FE5639;
@@ -907,4 +905,62 @@ input[type="submit"]:focus {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* works carousel */
+.works {
+    position: relative;
+}
+.works.owl-carousel {
+    padding: 0 30px;
+}
+.works .owl-nav div {
+    position: absolute;
+    font-size: 50px;
+    color: #ccc;
+    top: 40%;
+}
+.works .owl-nav div:hover {
+    color: #555;
+}
+.works .owl-nav .owl-prev {
+    left: 0;
+}
+.works .owl-nav .owl-next {
+    right: 0;
+}
+.works .owl-item {
+    padding: 0 2px;
+    box-sizing: border-box;
+}
+.works .owl-item a {
+    background: #000;
+    display: block;
+    margin: 0;
+}
+.works .owl-item .title {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+.works .owl-item i {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: url(images/iface/zoom.svg);
+    background-size: contain;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.works .owl-item img {
+}
+.works .owl-item:hover i {
+    display: block;
+}
+.works .owl-item:hover img {
+    opacity: 0.5;
 }

@@ -23,14 +23,26 @@
 
     <link href="/wp-content/themes/LightFirm/style.css" rel="stylesheet" type="text/css"/>
     <link href="/wp-content/themes/LightFirm/reset.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <link href="/wp-content/themes/LightFirm/owl/assets/owl.carousel.css" rel="stylesheet" type="text/css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <script src="https://use.fontawesome.com/3e3fd9d0f8.js"></script>
 
-    <script src="/wp-content/themes/LightFirm/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <!--<script src="/wp-content/themes/LightFirm/js/jquery-1.8.3.min.js" type="text/javascript"></script>-->
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+
     <script src="/wp-content/themes/LightFirm/js/cufon-yui.js" type="text/javascript"></script>
     <script src="/wp-content/themes/LightFirm/js/cufon-replace.js" type="text/javascript"></script>
     <script src="/wp-content/themes/LightFirm/js/Century_Gothic_700.font.js" type="text/javascript"></script>
+
+    <script src="/wp-content/themes/LightFirm/owl/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="/wp-content/themes/LightFirm/owl/owl.carousel.min.js" type="text/javascript"></script>
+
+    <link href="/wp-content/themes/LightFirm/pp/prettyPhoto.css" rel="stylesheet">
+    <script src="/wp-content/themes/LightFirm/pp/prettyPhoto.js" type="text/javascript"></script>
+
 
     <!-- All in One SEO Pack 2.3.12.1 by Michael Torbert of Semper Fi Web Design[827,895] -->
     <meta name="description"
@@ -216,7 +228,7 @@
             </div>
             <div class="title">быстро, качественно, выгодно</div>
             <div class="sub-title">Изготовление декораций от «Bright Day»</div>
-            <a href="" class="order-btn">Сделать заказ</a>
+            <a href="#" class="order-btn">Сделать заказ</a>
         </div>
         <!-- meta slider -->
         <div style="width: 100%;" class="metaslider metaslider-flex metaslider-159 ml-slider nav-hidden">
@@ -303,6 +315,7 @@
                     </div>
                     <div class="entry">
                         <h1>Почему мы</h1>
+
                         <div class="icons">
                             <div class="icon icon1">
                                 <i></i>
@@ -335,6 +348,51 @@
                                 <div class="sub-title">Опыт оформления мероприятий более 10 лет</div>
                             </div>
                         </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="entry">
+                        <h1>Наши работы</h1>
+                        <div class="owl-carousel works">
+                            <div>
+                                <i></i>
+                                <a href="/wp-content/themes/LightFirm/images/masks.jpg" rel="zoom"><img
+                                        src="/wp-content/themes/LightFirm/images/masks.jpg"></a>
+                                <div class="title">Яркая театральная бутофория</div>
+                            </div>
+                            <div>
+                                <i></i>
+                                <a href="/wp-content/themes/LightFirm/images/masks.jpg" rel="zoom"><img
+                                        src="/wp-content/themes/LightFirm/images/masks.jpg"></a>
+                                <div class="title">Яркая театральная бутофория</div>
+                            </div>
+                            <div>
+                                <i></i>
+                                <a href="/wp-content/themes/LightFirm/images/masks.jpg" rel="zoom"><img
+                                        src="/wp-content/themes/LightFirm/images/masks.jpg"></a>
+                                <div class="title">Яркая театральная бутофория</div>
+                            </div>
+                            <div>
+                                <i></i>
+                                <a href="/wp-content/themes/LightFirm/images/masks.jpg" rel="zoom"><img
+                                        src="/wp-content/themes/LightFirm/images/masks.jpg"></a>
+                                <div class="title">Яркая театральная бутофория</div>
+                            </div>
+                        </div>
+                        <script>
+                          $(document).ready(function () {
+                            $("a[rel^='zoom']").prettyPhoto({
+                              changepicturecallback: function () {
+                                jQuery('.twitter').empty();
+                                jQuery('.facebook').empty();
+                              }
+                            });
+                            $(".owl-carousel").owlCarousel({
+                              loop: true,
+                              nav: true,
+                              navText: ['‹', '›']
+                            });
+                          });
+                        </script>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -744,19 +802,21 @@
             </div>
         </div>
     </div>
-    <!-- end FOOTER -->
-    <!-- ngg_resource_manager_marker -->
-    <script type='text/javascript'
-            src='/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var _wpcf7 = {"recaptcha": {"messages": {"empty": "\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0435, \u0447\u0442\u043e \u0432\u044b \u043d\u0435 \u0440\u043e\u0431\u043e\u0442."}}};
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.7'></script>
-    <script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
-    <script type='text/javascript'
-            src='/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider-min.js?ver=3.5'></script>
+</div>
+
+<!-- end FOOTER -->
+<!-- ngg_resource_manager_marker -->
+<script type='text/javascript'
+        src='/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var _wpcf7 = {"recaptcha": {"messages": {"empty": "\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0435, \u0447\u0442\u043e \u0432\u044b \u043d\u0435 \u0440\u043e\u0431\u043e\u0442."}}};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.7'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
+<script type='text/javascript'
+        src='/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider-min.js?ver=3.5'></script>
 
 </body>
 </html>
