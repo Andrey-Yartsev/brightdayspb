@@ -297,6 +297,11 @@
             <div style="margin-bottom: 30px;">
                 <div class="post-450 page type-page status-publish hentry" id="post-450">
                     <div class="entry">
+<div class="center">
+                        <a class="btn btn-order">Закзать оформление</a>
+                        <a class="btn btn-advice">Получить консультацию</a>
+</div>
+
                         Главная <h1>Изготовление и аренда декораций от «Bright Day»: быстро, качественно, выгодно</h1>
                         <p>Bright Day &#8212; art сообщество, опытных креативных людей занимающихся изготовлением
                             декораций и оформлением праздников уже долгие годы. Мы представляем полный комплекс услуг по
@@ -380,23 +385,41 @@
                                 <div class="title">Яркая театральная бутофория</div>
                             </div>
                         </div>
-                        <script>
-                          $(document).ready(function () {
-                            $("a[rel^='zoom']").prettyPhoto({
-                              changepicturecallback: function () {
-                                jQuery('.twitter').empty();
-                                jQuery('.facebook').empty();
-                              }
-                            });
-                            $(".owl-carousel").owlCarousel({
-                              loop: true,
-                              nav: true,
-                              navText: ['‹', '›']
-                            });
-                          });
-                        </script>
                     </div>
                     <div class="clear"></div>
+
+                    <div class="entry">
+                        <h1>Отзывы клиентов</h1>
+                        <div class="owl-carousel reviews">
+                            <div>
+                                <i></i>
+                                <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+                                        src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+                            </div>
+                            <div>
+                                <i></i>
+                                <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+                                        src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+                            </div>
+                            <div>
+                                <i></i>
+                                <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+                                        src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+                            </div>
+                            <div>
+                                <i></i>
+                                <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+                                        src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+                            </div>
+                            <div>
+                                <i></i>
+                                <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+                                        src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+
                 </div>
 
                 <div style="margin-bottom: 30px;">
@@ -820,8 +843,6 @@
 <script type='text/javascript'
         src='/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider-min.js?ver=3.5'></script>
 
-
-
 <div class="feedback-modal">
     <div class="close-btn">✕</div>
     <form action="http://localhost:1337/brightdayspb.ru/" method="post">
@@ -852,6 +873,28 @@
     </form>
 </div>
 <div class="overlay"></div>
+
+<script>
+  $(document).ready(function () {
+    $("a[rel^='zoom']").prettyPhoto({
+      changepicturecallback: function () {
+        jQuery('.twitter').empty();
+        jQuery('.facebook').empty();
+      }
+    });
+    $(".owl-carousel.works").owlCarousel({
+      loop: true,
+      nav: true,
+      navText: ['‹', '›']
+    });
+    $(".owl-carousel.reviews").owlCarousel({
+      items: 4,
+      loop: true,
+      nav: true,
+      navText: ['‹', '›']
+    });
+  });
+</script>
 
 <script>
   $(document).ready(function () {
