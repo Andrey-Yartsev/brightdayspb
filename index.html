@@ -461,7 +461,7 @@
                         <div class="col-sm-6 col-md-4">
                             <div class="service-hp-item">
                                 <div class="dprophead">
-                                    <a href="/uslugi/oformlenie-vystavok-konferencij-i-delovyx-vstrech">Оформление
+                                    <a href="/uslugi/oformlenie-vystavok-konfe`rencij-i-delovyx-vstrech">Оформление
                                         выставок, конференций и деловых встреч</a>
                                 </div>
                                 <div class="dpropimg">
@@ -817,6 +817,38 @@
 <script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
 <script type='text/javascript'
         src='/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider-min.js?ver=3.5'></script>
+
+
+<div class="feedback-modal">
+    <div class="close-btn">✕</div>
+    <form action="/">
+        <div class="field">
+            <label>Ваше имя:</label>
+            <input type="text"/>
+        </div>
+        <div class="field">
+            <label>Телефон для связи:</label>
+            <input type="phone"/>
+        </div>
+        <div class="footer">
+            <input type="submit" value="Заказать звонок"/>
+        </div>
+    </form>
+</div>
+<div class="overlay"></div>
+
+<script>
+  $(document).ready(function () {
+    $('.close-btn').click(function () {
+      $('.feedback-modal').toggleClass('opened');
+      $('.overlay').toggleClass('opened');
+    });
+    $('.order-btn').click(function () {
+      $('.feedback-modal').toggleClass('opened');
+      $('.overlay').toggleClass('opened');
+    });
+  });
+</script>
 
 </body>
 </html>
