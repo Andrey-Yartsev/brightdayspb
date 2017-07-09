@@ -43,6 +43,8 @@
     <link href="/wp-content/themes/LightFirm/pp/prettyPhoto.css" rel="stylesheet">
     <script src="/wp-content/themes/LightFirm/pp/prettyPhoto.js" type="text/javascript"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.1/jquery.form.min.js" integrity="sha384-tIwI8+qJdZBtYYCKwRkjxBGQVZS3gGozr3CtI+5JF/oL1JmPEHzCEnIKbDbLTCer" crossorigin="anonymous"></script>
+
 
     <!-- All in One SEO Pack 2.3.12.1 by Michael Torbert of Semper Fi Web Design[827,895] -->
     <meta name="description"
@@ -819,9 +821,21 @@
         src='/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider-min.js?ver=3.5'></script>
 
 
+
 <div class="feedback-modal">
     <div class="close-btn">✕</div>
-    <form action="/">
+    <form action="http://localhost:1337/brightdayspb.ru/" method="post">
+
+        <div style="display: none;">
+            <input type="hidden" name="_wpcf7" value="4">
+            <input type="hidden" name="_wpcf7_version" value="4.7">
+            <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-o1">
+            <input type="hidden" name="_wpnonce" value="76f9ee8192">
+            <input type="hidden" name="_wpcf7_is_ajax_call" value="1">
+
+        </div>
+
         <div class="field">
             <label>Ваше имя:</label>
             <input type="text"/>
@@ -830,8 +844,10 @@
             <label>Телефон для связи:</label>
             <input type="phone"/>
         </div>
+        <div class="field error">
+        </div>
         <div class="footer">
-            <input type="submit" value="Заказать звонок"/>
+            <input type="submit" value="Заказать звонок" class="btn"/>
         </div>
     </form>
 </div>
@@ -839,14 +855,32 @@
 
 <script>
   $(document).ready(function () {
-    $('.close-btn').click(function () {
+    var close = function() {
       $('.feedback-modal').toggleClass('opened');
       $('.overlay').toggleClass('opened');
-    });
-    $('.order-btn').click(function () {
+    };
+    var open = function() {
       $('.feedback-modal').toggleClass('opened');
       $('.overlay').toggleClass('opened');
+    };
+    $(".feedback-modal form").submit(function(e) {
+//      console.log(this);
+      $(".feedback-modal form input[type=submit]").attr("disabled", true);
     });
+    $(".feedback-modal form").ajaxForm(function(r) {
+      $(".feedback-modal form input[type=submit]").attr("disabled", false);
+      if (!r) {
+        close();
+        return;
+      }
+      r = r.replace(/<textarea>(.*)<\/textarea>/, '$1');
+      r = $.parseJSON(r);
+      if (!r.mailSent) {
+        $(".feedback-modal .error").html(r.message);
+      }
+    });
+    $('.close-btn').click(close);
+    $('.order-btn').click(open);
   });
 </script>
 

@@ -743,28 +743,28 @@ textarea {
     resize: vertical;
 }
 
-button,
-button[disabled]:hover,
-button[disabled]:focus,
-input[type="button"],
-input[type="button"][disabled]:hover,
-input[type="button"][disabled]:focus,
-input[type="reset"],
-input[type="reset"][disabled]:hover,
-input[type="reset"][disabled]:focus,
-input[type="submit"],
-input[type="submit"][disabled]:hover,
-input[type="submit"][disabled]:focus {
-    background: #1a1a1a;
-    border: 0;
-    border-radius: 2px;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 0.046875em;
-    line-height: 1;
-    padding: 0.84375em 0.875em 0.78125em;
-    text-transform: uppercase;
-}
+/*button,*/
+/*button[disabled]:hover,*/
+/*button[disabled]:focus,*/
+/*input[type="button"],*/
+/*input[type="button"][disabled]:hover,*/
+/*input[type="button"][disabled]:focus,*/
+/*input[type="reset"],*/
+/*input[type="reset"][disabled]:hover,*/
+/*input[type="reset"][disabled]:focus,*/
+/*input[type="submit"],*/
+/*input[type="submit"][disabled]:hover,*/
+/*input[type="submit"][disabled]:focus {*/
+    /*background: #1a1a1a;*/
+    /*border: 0;*/
+    /*border-radius: 2px;*/
+    /*color: #fff;*/
+    /*font-weight: 700;*/
+    /*letter-spacing: 0.046875em;*/
+    /*line-height: 1;*/
+    /*padding: 0.84375em 0.875em 0.78125em;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
 button:hover,
 button:focus,
@@ -981,10 +981,10 @@ input[type="submit"]:focus {
     color: #b4b9bf;
     z-index: 200;
     position: absolute;
+    top: 100px;
     left: 0;
     right: 0;
     margin: auto;
-    top: 200px;
     background: #F1F5F8;
     width: 300px;
     padding: 25px;
@@ -1021,8 +1021,17 @@ input[type="submit"]:focus {
     text-decoration: none;
     padding: 15px 30px 15px 30px;
 }
-.feedback-modal input[type=submit]:hover {
+.feedback-modal input[type=submit]:hover:not([disabled]) {
     background-color: #ff8571;
+}
+.feedback-modal .error {
+    color: #FE5639;
+    font-size: 12px;
+}
+.feedback-modal input[type=submit][disabled] {
+    cursor: default;
+    color: #999;
+    background: #F1F5F8 url(/wp-content/plugins/contact-form-7/images/ajax-loader.gif) no-repeat 5px 15px;
 }
 .feedback-modal .close-btn {
     cursor: pointer;
@@ -1061,4 +1070,8 @@ input[type="submit"]:focus {
 }
 .opened {
     visibility: visible;
+}
+
+.feedback-modal form.loading {
+    background: #f00;
 }
