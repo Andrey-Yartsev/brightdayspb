@@ -84,6 +84,39 @@
     <div class="clear"></div>
   </div>
 
+  <div class="entry">
+    <h1>Отзывы клиентов</h1>
+    <div class="owl-carousel reviews">
+      <div>
+        <i></i>
+        <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+            src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+      </div>
+      <div>
+        <i></i>
+        <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+            src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+      </div>
+      <div>
+        <i></i>
+        <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+            src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+      </div>
+      <div>
+        <i></i>
+        <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+            src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+      </div>
+      <div>
+        <i></i>
+        <a href="/wp-content/themes/LightFirm/images/otziv.jpg" rel="zoom"><img
+            src="/wp-content/themes/LightFirm/images/otziv.jpg"></a>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <br><br>
+
 	<div style="margin-bottom: 30px;">
 		<div class="how-h1">Наши услуги</div>
 		<div class="clear"></div>
