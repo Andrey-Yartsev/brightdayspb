@@ -743,28 +743,42 @@ textarea {
     resize: vertical;
 }
 
-/*button,*/
-/*button[disabled]:hover,*/
-/*button[disabled]:focus,*/
-/*input[type="button"],*/
-/*input[type="button"][disabled]:hover,*/
-/*input[type="button"][disabled]:focus,*/
-/*input[type="reset"],*/
-/*input[type="reset"][disabled]:hover,*/
-/*input[type="reset"][disabled]:focus,*/
-/*input[type="submit"],*/
-/*input[type="submit"][disabled]:hover,*/
-/*input[type="submit"][disabled]:focus {*/
-/*background: #1a1a1a;*/
-/*border: 0;*/
-/*border-radius: 2px;*/
-/*color: #fff;*/
-/*font-weight: 700;*/
-/*letter-spacing: 0.046875em;*/
-/*line-height: 1;*/
-/*padding: 0.84375em 0.875em 0.78125em;*/
-/*text-transform: uppercase;*/
-/*}*/
+/*
+button,
+button[disabled]:hover,
+button[disabled]:focus,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus {
+background: #1a1a1a;
+border: 0;
+border-radius: 2px;
+color: #fff;
+font-weight: 700;
+letter-spacing: 0.046875em;
+line-height: 1;
+padding: 0.84375em 0.875em 0.78125em;
+text-transform: uppercase;
+}
+*/
+
+.btn-black {
+    background: #1a1a1a;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+}
 
 button:hover,
 button:focus,
