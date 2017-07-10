@@ -19,13 +19,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet" type="text/css" />
 <link href="<?php bloginfo('template_directory'); ?>/reset.css" rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <link href="/wp-content/themes/LightFirm/owl/assets/owl.carousel.css" rel="stylesheet" type="text/css"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+
 <script src="https://use.fontawesome.com/3e3fd9d0f8.js"></script>
 
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+
 <script src="<?php bloginfo('template_directory'); ?>/js/cufon-yui.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/cufon-replace.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/Century_Gothic_700.font.js" type="text/javascript"></script>
+
+  <script src="/wp-content/themes/LightFirm/owl/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="/wp-content/themes/LightFirm/owl/owl.carousel.min.js" type="text/javascript"></script>
+
+  <link href="/wp-content/themes/LightFirm/pp/prettyPhoto.css" rel="stylesheet">
+  <script src="/wp-content/themes/LightFirm/pp/prettyPhoto.js" type="text/javascript"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.1/jquery.form.min.js" integrity="sha384-tIwI8+qJdZBtYYCKwRkjxBGQVZS3gGozr3CtI+5JF/oL1JmPEHzCEnIKbDbLTCer" crossorigin="anonymous"></script>
+
 <?php wp_head(); ?>
 </head>
 
