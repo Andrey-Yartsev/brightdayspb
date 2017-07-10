@@ -830,7 +830,7 @@ input[type="submit"]:focus {
 }
 
 .slider-over .search input[type=submit] {
-    background: #FE5639 url(images/iface/search-w.svg) no-repeat 10px 7px;
+    background: #FE5639 url(images/iface/search-w.svg) no-repeat 10px 9px;
     background-size: 16px;
     padding: 8px 16px;
     border-radius: 5px;
@@ -1031,7 +1031,7 @@ input[type="submit"]:focus {
 .entry .btn {
     margin-right: 10px;
 }
-.btn {
+.btn, input[type=submit] {
     border: 0;
     padding: 15px 60px 15px 80px;
 }
