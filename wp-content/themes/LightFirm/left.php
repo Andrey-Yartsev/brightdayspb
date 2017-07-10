@@ -53,6 +53,37 @@
     <div class="clear"></div>
   </div>
 
+  <div class="entry">
+    <h1>Наши работы</h1>
+    <div class="owl-carousel works">
+      <div>
+        <i></i>
+        <a href="/wp-content/themes/LightFirm/images/masks.jpg" rel="zoom"><img
+            src="/wp-content/themes/LightFirm/images/masks.jpg"></a>
+        <div class="title">Яркая театральная бутофория</div>
+      </div>
+      <div>
+        <i></i>
+        <a href="/wp-content/themes/LightFirm/images/masks.jpg" rel="zoom"><img
+            src="/wp-content/themes/LightFirm/images/masks.jpg"></a>
+        <div class="title">Яркая театральная бутофория</div>
+      </div>
+      <div>
+        <i></i>
+        <a href="/wp-content/themes/LightFirm/images/masks.jpg" rel="zoom"><img
+            src="/wp-content/themes/LightFirm/images/masks.jpg"></a>
+        <div class="title">Яркая театральная бутофория</div>
+      </div>
+      <div>
+        <i></i>
+        <a href="/wp-content/themes/LightFirm/images/masks.jpg" rel="zoom"><img
+            src="/wp-content/themes/LightFirm/images/masks.jpg"></a>
+        <div class="title">Яркая театральная бутофория</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
 	<div style="margin-bottom: 30px;">
 		<div class="how-h1">Наши услуги</div>
 		<div class="clear"></div>
