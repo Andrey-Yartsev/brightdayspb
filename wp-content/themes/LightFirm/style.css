@@ -812,7 +812,7 @@ input[type="submit"]:focus {
 /* slider over */
 .slidescool {
     height: 360px;
-    background: #000 url(images/head-bg.png) no-repeat;
+    background: #000 no-repeat;
     position: relative;
 }
 
@@ -1325,14 +1325,9 @@ input[type="submit"]:focus {
     width: 150px;
 }
 
-
 .entry.btns {
     margin: 40px 0;
 }
-
-
-
-
 
 .owl-dots {
     text-align: center;
