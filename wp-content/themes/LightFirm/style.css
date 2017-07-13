@@ -811,14 +811,16 @@ input[type="submit"]:focus {
 
 /* slider over */
 .slidescool {
+    height: 360px;
+    background: #000 url(images/head-bg.png) no-repeat;
     position: relative;
-    background: #000;
 }
 
 .slider-over {
     color: #fff;
     z-index: 10;
     position: absolute;
+    top: 40px;
     padding: 15px 40px;
 }
 
