@@ -79,8 +79,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span>круглосуточно</span>
         </div>
         <div class="address">
-          Санкт-Петербург,<br>
-          Петровский пр. д.9
+          <a href="/contacts">Санкт-Петербург,<br>
+            Петровский пр. д.9</a>
         </div>
         <div class="call">
           <a href="tel:+79816996774" class="phone">+7 (981) 699-67-74</a>

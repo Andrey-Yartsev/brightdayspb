@@ -1295,6 +1295,14 @@ input[type="submit"]:focus {
 .contacts .address {
     width: 150px;
 }
+.contacts .address a {
+    color: #999;
+    text-decoration: none;
+}
+.contacts .address a:hover {
+    text-decoration: underline;
+}
+
 .contacts .call {
     position: absolute;
     top: 5px;
