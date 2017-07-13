@@ -157,10 +157,15 @@ img {
 /* HEADER */
 
 .part1 {
+    width: 1040px;
+    display: none;
     background: #2d3134 none repeat scroll 0 0;
     height: 50px;
     color: #FFF;
     font-size: 15px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 
 .inners {
@@ -168,7 +173,7 @@ img {
 }
 
 .first {
-    width: 250px;
+    width: 240px;
     float: left;
 }
 
@@ -180,12 +185,17 @@ img {
 }
 
 .part1 .tel {
+    box-sizing: border-box;
+    background: url(images/iface/call-white.png) no-repeat 0 8px;
+
     font-size: 25px;
     text-transform: uppercase;
-    width: 240px;
+    width: 260px;
     float: right;
     height: 30px;
     padding: 10px 0 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
     text-align: right;
     font-weight: bold;
 }
@@ -545,6 +555,7 @@ li.hhome > a {
     margin-top: 4px;
     position: relative;
     margin-bottom: 15px;
+    margin-left: 60px;
 }
 
 .entry h1::after, .how-h1::after {
@@ -849,6 +860,7 @@ input[type="submit"]:focus {
 .slider-over .sub-title {
     margin-top: 5px;
     font-size: 18px;
+    text-shadow: 1px 1px 4px #000;
 }
 
 .slider-over .order-btn {
@@ -867,8 +879,8 @@ input[type="submit"]:focus {
 
 .slider-over .search input[type=submit]:hover,
 .slider-over .order-btn:hover,
-.entry .btn:hover {
-    background-color: #ff8571;
+.btn:hover {
+    background-color: #ff8571 !important;
 }
 
 /* icons "why we" */
@@ -930,6 +942,7 @@ input[type="submit"]:focus {
 }
 
 .owl-carousel {
+    box-sizing: border-box;
     padding: 0 30px;
 }
 
@@ -998,16 +1011,16 @@ input[type="submit"]:focus {
     top: 0;
     left: 0;
     opacity: 0.5;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: 100;
 }
 
 .feedback-modal {
+    position: fixed;
     color: #b4b9bf;
     z-index: 200;
-    position: absolute;
     top: 100px;
     left: 0;
     right: 0;
@@ -1032,12 +1045,28 @@ input[type="submit"]:focus {
     margin-bottom: 20px;
 }
 
-.feedback-modal .field input {
+.feedback-modal .field input,
+.feedback-modal .field textarea {
     box-sizing: border-box;
     border-radius: 4px;
     border: 1px solid #ccc;
     padding: 10px 10px;
     width: 100%;
+}
+.feedback-modal .field textarea {
+    height: 100px;
+}
+#feedbackOrder {
+    width: 450px;
+}
+#feedbackOrder .field.f-text,
+#feedbackOrder .field.f-phone {
+    width: 50%;
+    float: left;
+}
+#feedbackOrder .field.f-text {
+    padding-right: 15px;
+    box-sizing: border-box;
 }
 
 .btn, .entry .btn {
@@ -1058,16 +1087,22 @@ input[type="submit"]:focus {
 
 .btn, input[type=submit] {
     border: 0;
-    padding: 15px 60px 15px 80px;
+    padding: 15px 30px 15px 30px;
+}
+.center .btn {
+    padding: 15px 30px 15px 30px;
+
 }
 
-.entry .btn-order {
-    background: #FE5639 url(images/iface/order.png) no-repeat 40px 12px;
+.entry .order-btn {
+    padding: 15px 30px 15px 70px;
+    background: #FE5639 url(images/iface/order.png) no-repeat 30px 12px;
     background-size: 25px;
 }
 
-.entry .btn-advice {
-    background: #FE5639 url(images/iface/comment.svg) no-repeat 40px 14px;
+.entry .call-btn {
+    padding: 15px 30px 15px 70px;
+    background: #FE5639 url(images/iface/comment.svg) no-repeat 30px 14px;
     background-size: 25px;
 }
 
@@ -1108,8 +1143,19 @@ input[type="submit"]:focus {
     box-sizing: border-box;
 }
 
+.feedback-modal .success {
+    color: #000;
+}
+
 .feedback-modal .close-btn:hover {
     opacity: 1;
+}
+
+.feedback-modal .required-help {
+    float: left;
+    font-size: 14px;
+    padding-right: 20px;
+    margin-bottom: 15px;
 }
 
 .overlay,
@@ -1153,11 +1199,9 @@ input[type="submit"]:focus {
 .right-block ul ul {
     margin-left: 20px;
 }
-
 .right-block > ul > li a {
     color: #000;
 }
-
 .right-block > ul > li > a {
     display: block;
     float: left;
@@ -1167,21 +1211,37 @@ input[type="submit"]:focus {
     text-decoration: none;
     font-size: 16px;
 }
-
 .right-block > ul > li:before {
+    position: absolute;
     content: "›";
     float: left;
     margin: 10px -30px 0 20px;
     font-size: 30px;
 }
-
 .right-block li, .right-block ul {
     clear: both;
 }
+.right-block > ul > li > a {
+    background: url(images/iface/arrow-w.png) no-repeat right center;
+    background-size: 20px 100px;
+}
+.right-block > ul > li > a:hover {
+    background-color: #e6e6e6;
+}
 
 .right-block > ul > li > ul {
+    display: none;
     margin-left: 25px;
     padding-top: 10px;
+}
+
+.right-block > ul > li.current_page_ancestor > ul,
+.right-block > ul > li.current_page_item > ul {
+    display: block;
+}
+
+.right-block > ul > li > ul > li.current_page_item a {
+    color: #FE5639;
 }
 
 .right-block > ul > li > ul > li {
@@ -1190,38 +1250,98 @@ input[type="submit"]:focus {
     font-size: 14px;
 }
 
-/* 2A292D */
+/* vk social widget */
 
 #vk_groups {
     margin-top: 30px;
     display: inline-block;
 }
 
+/* header contacts block */
+
 .contacts {
     color: #999;
 }
 .contacts {
     position: absolute;
-    top: 10px;
-    right: 100px;
+    top: 40px;
+    right: 270px;
 }
-
 .contacts > div {
     display: block;
     float: left;
-    max-width: 150px;
 }
-
 .contacts .schedule span {
     color: #FE5639;
 }
 .contacts .schedule {
-    padding-left: 40px;
-    background: url(images/iface/time.svg) no-repeat 10px 0;
+    padding-left: 30px;
+    background: url(images/iface/time.svg) no-repeat 0 0;
     background-size: 20px;
 }
+.contacts .schedule span {
+    font-weight: bold;
+}
 .contacts .address {
-    padding-left: 40px;
-    background: url(images/iface/geo.svg) no-repeat 10px 0;
+    padding-left: 30px;
+    background: url(images/iface/geo.svg) no-repeat 0 0;
     background-size: 30px;
 }
+.contacts .schedule {
+    width: 140px;
+}
+.contacts .address {
+    width: 150px;
+}
+.contacts .call {
+    position: absolute;
+    top: 5px;
+    right: -270px;
+    text-align: right;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+.contacts .call .phone {
+    margin-left: -27px;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    background: url(images/iface/call-red.png) no-repeat 0 3px;
+}
+.contacts .call .btn {
+    text-align: center;
+    width: 150px;
+}
+
+
+.entry.btns {
+    margin: 40px 0;
+}
+
+
+
+
+
+.owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent; }
+.owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+.owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px; }
+.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+    background: #869791; }
+
+
+

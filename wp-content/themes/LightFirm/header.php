@@ -67,13 +67,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div id="header">
 			<div class="logotip">
 				<a href="/" title="BrightDayspb.ru - изготовление и аренда декораций в СПБ">
-					<div class="about2"><?php echo $options['info-text-1']; ?></div>
+					<!--<div class="about2"><?php echo $options['info-text-1']; ?></div>-->
 					<div class="link"><span class="change3"><?php echo $options['info-text-2']; ?></span><span class="change1"><?php echo $options['info-text-3']; ?></span></div>
 					<div class="about"><?php echo $options['info-text-4']; ?></div>
 				</a>
 			</div>
 
-			<div class="top-menu">
+      <div class="contacts">
+        <div class="schedule">
+          График работы:
+          <span>круглосуточно</span>
+        </div>
+        <div class="address">
+          Санкт-Петербург,<br>
+          Петровский пр. д.9
+        </div>
+        <div class="call">
+          <div class="phone">+7 (981) 699-67-74</div>
+          <a href="#" class="btn call-btn">Заказать звонок</a>
+        </div>
+      </div>
+
+      <div class="top-menu">
 				<nav class="nav">
 					<ul class="menu">
 						<?php wp_nav_menu('menu_class=sf-menu&theme_location=top'); ?>

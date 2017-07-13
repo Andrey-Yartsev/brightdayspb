@@ -1,1 +1,1 @@
-Markup & PHP server logic for brightdayspb.ru
+Markup & WP server logic for brightdayspb.ru
