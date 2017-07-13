@@ -83,7 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Петровский пр. д.9
         </div>
         <div class="call">
-          <div class="phone">+7 (981) 699-67-74</div>
+          <a href="tel:+79816996774" class="phone">+7 (981) 699-67-74</a>
           <a href="#" class="btn call-btn">Заказать звонок</a>
         </div>
       </div>
